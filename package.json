@@ -5,6 +5,7 @@
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
+    "minify": "npm run build && rollup -c rollup.config.js",
     "rollup": "npm run build && rollup --input lib/es6_global/src/fizzbuzz.js --format iife --output lib/js/rolled-up.js --name fizzbuzz",
     "closure": "npm run rollup && java -jar closure-compiler.jar  --js_output_file=lib/js/closured.js --compilation_level ADVANCED_OPTIMIZATIONS lib/js/rolled-up.js"
   },
@@ -14,6 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "1.8.2",
-    "rollup": "0.47.4"
+    "rollup": "0.47.4",
+    "rollup-plugin-uglify": "^2.0.1"
   }
 }
