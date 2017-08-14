@@ -1,0 +1,11 @@
+{
+  "name": "hello",
+  "version": "0.1.0",
+  "sources": [
+    "src"
+  ],
+  "bs-dependencies" : [
+      // add your bs-dependencies here 
+  ],
+  "package-specs": ["es6-global"]
+}
