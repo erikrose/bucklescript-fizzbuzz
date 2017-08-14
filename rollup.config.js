@@ -6,6 +6,14 @@ export default {
   dest: 'lib/js/fizzbuzz.js',
   format: 'iife',
   plugins: [
-    uglify()
+    uglify({
+      compress: {
+        unsafe: true,
+        dead_code: true,
+        warnings: false,
+        passes: 2
+      },
+      toplevel: true
+    })
   ]
 };
