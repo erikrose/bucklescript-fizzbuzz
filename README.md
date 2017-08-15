@@ -21,7 +21,7 @@ That'll get you BuckleScript and its build tools.
 npm run rollup
 ```
 
-That'll get you the 4K JS build. To go smaller, install a modern Java, download the Closure Compiler jar, stick it in this folder, and call it "closure-compiler.jar". Then you can run...
+That'll get you the 4K JS build (in /lib/js). To go smaller, install a modern Java, download the Closure Compiler jar, stick it in this folder, and call it "closure-compiler.jar". Then you can run...
 
 ```
 npm run closure
