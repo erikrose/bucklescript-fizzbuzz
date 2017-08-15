@@ -29,5 +29,13 @@ npm run closure
 
 To see that it works, open `index.html` in a browser, and look at the JS console, where you should see lots of fizzbuzzy log entries.
 
+There's also a target that eschews the Closure Compiler in favor of [UglifyJS](http://lisperator.net/uglifyjs/). UglifyJS's output is usually (though not always) a bit bigger, but the build time is much faster, and you don't need Java:
+
+```
+npm run rollup-uglify
+```
+
+This last target also demonstrates the use of a `rollup.config.js` file to hold rollup's configuration.
+
 ## Open Questions
 * How does it work with OCaml modules from OPAM? At what layer does DCE happen there?
