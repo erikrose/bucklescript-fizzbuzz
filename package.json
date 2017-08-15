@@ -5,7 +5,7 @@
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
-    "minify": "npm run build && rollup -c rollup.config.js",
+    "rollup-uglify": "npm run build && rollup -c rollup.config.js",
     "rollup": "npm run build && rollup --input lib/es6_global/src/fizzbuzz.js --format iife --output lib/js/rolled-up.js --name fizzbuzz",
     "closure": "npm run rollup && java -jar closure-compiler.jar  --js_output_file=lib/js/closured.js --compilation_level ADVANCED_OPTIMIZATIONS lib/js/rolled-up.js"
   },
