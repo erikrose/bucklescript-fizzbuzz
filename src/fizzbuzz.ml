@@ -8,5 +8,5 @@ let fizzy_string num =
       if five then "Buzz" else
         string_of_int num
 let main top =
-  (List.iter (fun num -> Js.log (fizzy_string num)) (range 1 top))
+  List.iter (fun num -> Js.log (fizzy_string num)) (range 1 top)
 let () = main 100
